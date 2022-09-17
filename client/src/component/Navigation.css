@@ -1,0 +1,220 @@
+.Heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 20px 50px;
+
+}
+
+.Heading .searchBar {
+    width: 700px;
+    padding: 10px;
+    border-bottom: 2px solid black;
+
+
+
+}
+
+.Heading .searchBar button {
+    font-size: 30px;
+    border: 0;
+    outline: none;
+    background-color: white;
+    position: relative;
+    top: 5px;
+    padding: 0px 20px;
+}
+
+::placeholder {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Heading .searchBar input {
+
+    height: 100%;
+    font-size: 30px;
+    padding: 5px 80px 5px 5px;
+    border: 0;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+@media screen and (max-width:650px) {
+    .Heading .searchBar {
+        width: 500px;
+        padding: 10px;
+        border-bottom: 2px solid black;
+    
+    
+    
+    }
+    .Heading .searchBar button {
+        font-size: 20px;
+        border: 0;
+        outline: none;
+        background-color: white;
+        position: relative;
+        top: 5px;
+        padding: 0px 10px;
+    }
+    .Heading .searchBar input {
+
+        height: 100%;
+        font-size: 20px;
+        padding: 5px 30px 5px 5px;
+        border: 0;
+        outline: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+}
+@media screen and (max-width:450px) {
+    .Heading .searchBar {
+        width: 300px;
+        padding: 5px 10px;
+        border-bottom: 2px solid black;
+    
+    
+    
+    }
+    .Heading .searchBar button {
+        font-size: 15px;
+        border: 0;
+        outline: none;
+        background-color: white;
+        position: relative;
+        top: 3px;
+        padding: 0px 10px;
+    }
+    .Heading .searchBar input {
+
+        height: 100%;
+        font-size: 15px;
+        width: 70%;
+        padding: 5px 30px 5px 5px;
+        border: 0;
+        outline: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+}
+.Theme {
+    position: fixed;
+    top: 90vh;
+    right: 30px;
+    
+    }
+
+
+
+.Theme .theme button {
+    background-color:#B2C8DF;
+
+    border: 0;
+    outline: none;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    line-height: 55px;
+
+}
+.Theme:hover button{
+    background-color:#85b2e1;
+    cursor: pointer;
+}
+.Theme:hover .content{
+    position: absolute;
+    
+    top: 5px;
+    left: -140px;
+    display: block;
+    
+}
+
+.Theme .content{
+    text-align: center;
+    font-size: 14px;
+    width: 130px;
+    font-family: sans-serif;
+    background-color: rgb(58, 56, 56);
+    color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
+    display: none;
+
+    
+    
+}
+.Help {
+    position: fixed;
+    top: 82vh;
+    right: 30px;
+    
+    }
+
+
+
+.Help .help button {
+    background-color:#B2C8DF;
+
+    border: 0;
+    outline: none;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    line-height: 55px;
+
+}
+.Help:hover button{
+    background-color:#85b2e1;
+    cursor: pointer;
+}
+.Help:hover .content{
+    position: absolute;
+    
+    top: 5px;
+    left: -140px;
+    display: block;
+    
+}
+
+.Help .content{
+    text-align: center;
+    font-size: 14px;
+    width: 130px;
+    font-family: sans-serif;
+    background-color: rgb(58, 56, 56);
+    color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
+    display: none;
+
+    
+    
+}
+@media screen and (max-width:630px) {
+    .Help {
+        
+        right: 20px;
+        
+        }
+    .Theme {
+            
+            right: 20px;
+            
+            }
+}
+@media screen and (max-width:500px) {
+    .Help {
+        
+        right: 10px;
+        
+        }
+    .Theme {
+            
+            right: 10px;
+            
+            }
+}
