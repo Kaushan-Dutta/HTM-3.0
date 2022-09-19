@@ -20,100 +20,145 @@
 .BlockChain .BlockTheme .Gif {
     width: 100%;
 }
-.BlockChain .BlockTheme .Gif img{
-    width: 300px;height: 300px;
+
+.BlockChain .BlockTheme .Gif img {
+    width: 300px;
+    height: 300px;
 }
-.BlockChain .BlockTheme .about{
+
+.BlockChain .BlockTheme .about {
     padding: 0% 15%;
     font-size: 20px;
 }
-.BlockChain .BlockContent{
-    position: relative;top: 20px;
+
+.BlockChain .BlockContent {
+    position: relative;
+    top: 20px;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     font-size: 50px;
 
 }
+
 .BlockChain .BlockVideo {
     width: 100%;
     font-family: 'Quicksand', sans-serif;
     font-size: 50px;
-    position: relative;top: 20px;
+    position: relative;
+    top: 20px;
 
 }
-.BlockChain .BlockVideo .roadmap{
+
+.BlockChain .BlockVideo .roadmap {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.BlockChain button{
+.BlockChain button {
     padding: 5px 50px;
 }
 
 
-.BlockVideo .videos{
+.BlockVideo .videos {
     display: flex;
     flex-direction: row;
-    
+
 
 }
-.BlockVideo .videos .item{
-   
-   background-color: wheat;
-   margin-left: 20px;
-   margin-right: 20px;
-   border-radius:12px ;
-   border: 2px solid black;
-    
-}
-.BlockVideo .item img{
-    width: 300px;
-    border-radius:12px ;
-     
- }
- .BlockVideo .videos {
-    
+
+
+.BlockVideo .videos {
+
     overflow-y: hidden;
-    overflow-x:scroll ;
+    overflow-x: scroll;
 
- }
- .BlockVideo .videos::-webkit-scrollbar {
-    
-   display: none;
+}
 
- }
- @media screen and (max-width:1000px) {
-    .BlockContent .roadmap img{
+.BlockVideo .videos::-webkit-scrollbar {
+
+    display: none;
+
+}
+
+@media screen and (max-width:1000px) {
+    .BlockContent .roadmap img {
         width: 95%;
         object-fit: contain;
     }
-    .BlockChain .BlockTheme .about{
+
+    .BlockChain .BlockTheme .about {
         padding: 0% 5%;
         font-size: 20px;
     }
-    
- }
- @media screen and (max-width:700px) {
-    .BlockTheme .heading{
+
+}
+
+@media screen and (max-width:700px) {
+    .BlockTheme .heading {
         font-size: 30px;
     }
-    .BlockChain .BlockTheme .about{
+
+    .BlockChain .BlockTheme .about {
         padding: 0 15px;
         font-size: 15px;
     }
-    .BlockChain .BlockContent{
-        
-        
+
+    .BlockChain .BlockContent {
+
+
         font-size: 30px;
-    
+
     }
-    .BlockChain .BlockVideo{
-        
-        
+
+    .BlockChain .BlockVideo .title {
+
+
         font-size: 30px;
-    
+
     }
+
+
+}
+
+.BlockChain .BlockVideo .block {
+   
+    min-width: 350px;
+    margin-left: 20px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px grey;
+
+   
+
+}
+
+.block:hover .content {
+    opacity: 0.9;
+    cursor: pointer;
+
+
+}
+
+.block .content {
+
+    background-color: rgb(25, 24, 24);
+    text-align: center;
     
-    
- }
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 10px;
+    transition: 0.4s ease-out;
+
+
+
+}
+
+.block .content p {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    top: 35%;
+    font-size: 50px;
+}
